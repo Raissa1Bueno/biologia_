@@ -159,3 +159,38 @@
       padding: 10px;
       border-left: 5px solid #0088cc;
     }
+
+     body {
+      font-family: Arial, sans-serif;
+      background-color: #e9f5ec;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    h1 {
+      color: #2e7d32;
+    }
+
+    .question {
+      margin-top: 20px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #388e3c;
+    }
+
+    .result {
+      font-size: 1.2em;
+      margin-top: 20px;
+      font-weight: bold;
+    }
