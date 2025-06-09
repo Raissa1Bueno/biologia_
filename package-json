@@ -1,0 +1,23 @@
+{
+  "name": "biologia_",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raissa1Bueno/biologia_.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raissa1Bueno/biologia_/issues"
+  },
+  "homepage": "https://github.com/Raissa1Bueno/biologia_#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
