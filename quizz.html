@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quizz</title>
    <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
 </head>
 <body>
 
@@ -17,5 +18,36 @@
      
     </ul>
   </nav>
+
+   <h1>Quiz de Biologia: Vírus</h1>
+  <form id="quizForm">
+    <div class="question">
+      <p>1. O que é um vírus?</p>
+      <label><input type="radio" name="q1" value="a"> Um organismo unicelular</label><br>
+      <label><input type="radio" name="q1" value="b"> Uma célula procarionte</label><br>
+      <label><input type="radio" name="q1" value="c"> Um agente infeccioso acelular</label><br>
+      <label><input type="radio" name="q1" value="d"> Uma bactéria mutante</label>
+    </div>
+
+    <div class="question">
+      <p>2. Qual estrutura um vírus NÃO possui?</p>
+      <label><input type="radio" name="q2" value="a"> Capsídeo</label><br>
+      <label><input type="radio" name="q2" value="b"> Envelope lipídico</label><br>
+      <label><input type="radio" name="q2" value="c"> Núcleo celular</label><br>
+      <label><input type="radio" name="q2" value="d"> Material genético</label>
+    </div>
+
+    <div class="question">
+      <p>3. Os vírus se reproduzem:</p>
+      <label><input type="radio" name="q3" value="a"> Sozinhos, em ambientes úmidos</label><br>
+      <label><input type="radio" name="q3" value="b"> Apenas dentro de células hospedeiras</label><br>
+      <label><input type="radio" name="q3" value="c"> No interior do solo</label><br>
+      <label><input type="radio" name="q3" value="d"> Por mitose</label>
+    </div>
+
+    <button type="button" onclick="verificarRespostas()">Enviar</button>
+  </form>
+
+  <div class="result" id="resultado"></div>
 </body>
 </html>
