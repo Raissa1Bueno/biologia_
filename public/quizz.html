@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizz</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+</head>
+<body>
+
+ <nav class="navbar">
+    <img src="https://static.vecteezy.com/system/resources/previews/043/729/563/original/green-virus-symbol-png.png" alt="Logo" class="logo">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="Doenças.html">Doenças</a></li>
+      <li><a href="quizz.html">quizz</a></li>
+     
+    </ul>
+  </nav>
+
+  <div class="quiz-container">
+    <h1>Quiz de Biologia: Vírus</h1>
+    <form id="quiz-form">
+      <!-- Pergunta 1 -->
+      <div class="question" id="q1">
+        <p>1. O que é um vírus?</p>
+        <label><input type="radio" name="q1" value="a"> A) Um ser vivo completo</label>
+        <label><input type="radio" name="q1" value="b"> B) Um ser unicelular</label>
+        <label><input type="radio" name="q1" value="c"> C) Um parasita intracelular obrigatório</label>
+        <label><input type="radio" name="q1" value="d"> D) Um tipo de bactéria</label>
+      </div>
+
+      <!-- Pergunta 2 -->
+      <div class="question" id="q2">
+        <p>2. Qual das opções abaixo os vírus não possuem?</p>
+        <label><input type="radio" name="q2" value="a"> A) DNA ou RNA</label>
+        <label><input type="radio" name="q2" value="b"> B) Metabolismo próprio</label>
+        <label><input type="radio" name="q2" value="c"> C) Capsídeo</label>
+        <label><input type="radio" name="q2" value="d"> D) Envelope lipídico</label>
+      </div>
+
+      <!-- Pergunta 3 -->
+      <div class="question" id="q3">
+        <p>3. Qual doença é causada por vírus?</p>
+        <label><input type="radio" name="q3" value="a"> A) Tuberculose</label>
+        <label><input type="radio" name="q3" value="b"> B) Dengue</label>
+        <label><input type="radio" name="q3" value="c"> C) Hanseníase</label>
+        <label><input type="radio" name="q3" value="d"> D) Câncer de pele</label>
+      </div>
+
+      <button type="submit">Ver Resultado</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+   
+  </body>
