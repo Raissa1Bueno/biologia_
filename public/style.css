@@ -159,76 +159,151 @@
       padding: 10px;
       border-left: 5px solid #0088cc;
     }
-
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz de Biologia - Vírus</title>
+  <style>
     body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
       margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
-  padding: 0px;
-}
+      padding: 20px;
+    }
 
-.quiz-container {
-  max-width: 700px;
-  margin: auto;
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+    .quiz-container {
+      max-width: 700px;
+      margin: auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
-h1 {
-  text-align: center;
-  color: #2c3e50;
-}
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
 
-.question {
-  margin-bottom: 25px;
-}
+    .question {
+      margin-bottom: 25px;
+    }
 
-.question p {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
+    .question p {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
 
-label {
-  display: block;
-  margin: 5px 0;
-  cursor: pointer;
-}
+    label {
+      display: block;
+      margin: 5px 0;
+      cursor: pointer;
+    }
 
-.correct {
-  background-color: #d4edda;
-  border-left: 5px solid #28a745;
-  padding-left: 10px;
-}
+    .correct {
+      background-color: #d4edda;
+      border-left: 5px solid #28a745;
+      padding-left: 10px;
+    }
 
-.incorrect {
-  background-color: #f8d7da;
-  border-left: 5px solid #dc3545;
-  padding-left: 10px;
-}
+    .incorrect {
+      background-color: #f8d7da;
+      border-left: 5px solid #dc3545;
+      padding-left: 10px;
+    }
 
-button {
-  display: block;
-  margin: 20px auto 0;
-  padding: 10px 20px;
-  background-color: #2ecc71;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #2ecc71;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
 
-button:hover {
-  background-color: #27ae60;
-}
+    button:hover {
+      background-color: #27ae60;
+    }
 
-#result {
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 30px;
-}
+    #result {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 30px;
+    }
 
-     
+      body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .quiz-container {
+      max-width: 700px;
+      margin: auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .question {
+      margin-bottom: 25px;
+    }
+
+    .question p {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      margin: 5px 0;
+      cursor: pointer;
+    }
+
+    .correct {
+      background-color: #d4edda;
+      border-left: 5px solid #28a745;
+      padding-left: 10px;
+    }
+
+    .incorrect {
+      background-color: #f8d7da;
+      border-left: 5px solid #dc3545;
+      padding-left: 10px;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #2ecc71;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #27ae60;
+    }
+
+    #result {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 30px;
+    }

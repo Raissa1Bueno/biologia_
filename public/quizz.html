@@ -18,11 +18,19 @@
      
     </ul>
   </nav>
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz de Biologia - Vírus</title>
+ 
+</head>
+<body>
   <div class="quiz-container">
     <h1>Quiz de Biologia: Vírus</h1>
     <form id="quiz-form">
-      <!-- Pergunta 1 -->
+
       <div class="question" id="q1">
         <p>1. O que é um vírus?</p>
         <label><input type="radio" name="q1" value="a"> A) Um ser vivo completo</label>
@@ -31,18 +39,16 @@
         <label><input type="radio" name="q1" value="d"> D) Um tipo de bactéria</label>
       </div>
 
-      <!-- Pergunta 2 -->
       <div class="question" id="q2">
-        <p>2. Qual das opções abaixo os vírus não possuem?</p>
+        <p>2. Qual estrutura os vírus não possuem?</p>
         <label><input type="radio" name="q2" value="a"> A) DNA ou RNA</label>
-        <label><input type="radio" name="q2" value="b"> B) Metabolismo próprio</label>
-        <label><input type="radio" name="q2" value="c"> C) Capsídeo</label>
+        <label><input type="radio" name="q2" value="b"> B) Capsídeo</label>
+        <label><input type="radio" name="q2" value="c"> C) Metabolismo próprio</label>
         <label><input type="radio" name="q2" value="d"> D) Envelope lipídico</label>
       </div>
 
-      <!-- Pergunta 3 -->
       <div class="question" id="q3">
-        <p>3. Qual doença é causada por vírus?</p>
+        <p>3. Qual dessas doenças é causada por vírus?</p>
         <label><input type="radio" name="q3" value="a"> A) Tuberculose</label>
         <label><input type="radio" name="q3" value="b"> B) Dengue</label>
         <label><input type="radio" name="q3" value="c"> C) Hanseníase</label>
@@ -54,5 +60,54 @@
 
     <div id="result"></div>
   </div>
-   
-  </body>
+
+  <script>
+    document.getElementById("quiz-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const respostas = {
+        q1: "c",
+        q2: "c",
+        q3: "b"
+      };
+
+      let pontuacao = 0;
+
+      for (let pergunta in respostas) {
+        const bloco = document.getElementById(pergunta);
+        const alternativas = bloco.querySelectorAll("label");
+        const selecionada = document.querySelector(`input[name="${pergunta}"]:checked`);
+
+        // Limpar classes anteriores
+        alternativas.forEach(label => label.classList.remove("correct", "incorrect"));
+
+        if (selecionada) {
+          if (selecionada.value === respostas[pergunta]) {
+            pontuacao++;
+            selecionada.parentElement.classList.add("correct");
+          } else {
+            selecionada.parentElement.classList.add("incorrect");
+
+            // marcar a correta
+            alternativas.forEach(label => {
+              if (label.querySelector("input").value === respostas[pergunta]) {
+                label.classList.add("correct");
+              }
+            });
+          }
+        } else {
+          // Marcar a correta mesmo se não for respondida
+          alternativas.forEach(label => {
+            if (label.querySelector("input").value === respostas[pergunta]) {
+              label.classList.add("correct");
+            }
+          });
+        }
+      }
+
+      const resultado = document.getElementById("result");
+      resultado.textContent = `Você acertou ${pontuacao} de ${Object.keys(respostas).length} perguntas.`;
+    });
+  </script>
+</body>
+</html>
